@@ -160,7 +160,7 @@ class Timer {
               </button>
               <div class="inputForMinutes">
       
-              <input type="number" id="minutesValInTextbox" class="inputValueForMinutes" value="0" placeholder="or Type here (in minutes)" required>
+              <input type="number" id="minutesValInTextbox" class="inputValueForMinutes" placeholder="or Type here (in minutes)" required>
               </div>
           `;
     }
