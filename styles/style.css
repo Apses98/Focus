@@ -1,0 +1,160 @@
+:root{
+    --nav-height: 50px;
+    
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    align-content: center;
+    
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    
+    width: 100%;
+    height: var(--nav-height);
+    background-color: aqua;
+    
+}
+
+ul{
+    padding: 15px;
+    float:left;
+}
+.navigation-menu li{
+    display: inline;
+    float: left;
+    padding: 0px 10px;
+    color: black;
+    
+    text-transform: uppercase;
+        
+}
+a{
+    text-decoration: none;
+
+}
+
+.flex-container{
+    /*display: flex;
+    flex-direction: row;
+    /*background-color: aquamarine; 
+    margin: var(--nav-height) 0; 
+    */
+  display: block;
+  margin: 20% 0;
+  
+  
+    
+    
+}
+
+
+
+.left-side-bar{
+    width: 15%;
+    text-align: left;
+    ;
+}
+.left-side-bar li{
+    list-style-type: none;
+    padding: 3px 0
+}
+
+.main-screen{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    
+}
+
+
+.task-setting-bar{
+    width: 15%;
+}
+footer{
+    bottom: 0;
+    position: fixed;
+
+}
+
+/* Timer styling */
+.timer {
+    font-family: sans-serif;
+    width: 90vw;
+    max-width: 1000px;
+    height: 100%;
+    max-height: 250px;
+    display: inline-block;
+    padding: 5vw 3vw ;
+    border-radius: 30px;
+    background: white; 
+    background-color: #99d3b1;
+  }
+  
+  .timer__part {
+    font-size: 5vw;
+    font-weight: bold;
+  }
+  
+  .timer__btn {
+    width: 10vw;
+    max-width: 150px;
+    height: 10vw;
+    max-height: 150px;
+    margin-left: 16px;
+    border-radius: 50%;
+    border: none;
+    color: white;
+    background: #8208e6;
+    cursor: pointer;
+  }
+  
+  .timer__btn--start {
+    background: #00b84c;
+    
+  }
+  
+  .timer__btn--stop {
+    background: #ff0256;
+  }
+  .timer__btn--close {
+    background: #b3260d;
+  }
+  
+
+  /* Styling for minutes input */
+  .inputForMinutes input{
+    order: 2px solid;
+    border-radius: 4px;
+    font-size: 4vw;
+    max-width: 900px;
+    margin: 0.25rem;
+    min-width: 125px;
+    padding: 0.5rem;
+    transition: border-color 0.5s ease-out;
+    
+}
+
+.inputForMinutes input:required:valid {
+    border-color: green;
+  }
+.inputForMinutes input:invalid {
+    border-color: red;
+  }
+.inputForMinutes input:focus:valid {
+    background: lightgreen;
+    background-size: 25px;
+  }
+
+.inputForMinutes input:focus:invalid {
+    background: lightsalmon;
+    background-size: 25px;
+  }
