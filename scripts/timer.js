@@ -19,16 +19,7 @@ class Timer {
       this.interval = null;
       this.remainingSeconds = 0;
       
-      
-      /*console.log(document.querySelector(".inputValueForMinutes").value)
-
-      this.el.minutesbox.addEventListener("change", () => {
-        ;
-
-      });
-        */
-      
-      
+            
       
       this.el.close.addEventListener("click", () => {
         
@@ -58,10 +49,12 @@ class Timer {
       this.stop();
       this.remainingSeconds = inputMinutes * 60;
       this.updateInterfaceTime();
+      this.start();
     }else {
         this.stop();
         this.remainingSeconds = inputMinutes * 60;
         this.updateInterfaceTime();
+        this.start();
     }
     x = 0;
         
